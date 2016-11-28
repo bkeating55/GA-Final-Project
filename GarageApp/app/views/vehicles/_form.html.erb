@@ -1,0 +1,18 @@
+<%= form_for([@garage, @garage.vehicles.build]) do |f| %>
+  <p>
+    <%= f.label :make %><br>
+    <%= f.text_field :make %>
+  </p>
+  <p>
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.submit "Add Vehicle"%>
+  </p>
+
+  <% end %>

@@ -10,12 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161128151229) do
+ActiveRecord::Schema.define(version: 20161128160908) do
 
   create_table "garages", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "vehicles", force: :cascade do |t|
+    t.string   "make"
+    t.string   "model"
+    t.integer  "year"
+    t.integer  "garage_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["garage_id"], name: "index_vehicles_on_garage_id"
   end
 
 end

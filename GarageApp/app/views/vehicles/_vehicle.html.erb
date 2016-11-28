@@ -1,0 +1,20 @@
+<p>
+  <strong>Make:</strong>
+  <%= vehicle.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= vehicle.model %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= vehicle.year %>
+</p>
+
+<p>
+  <%= link_to 'Delete Vehicle', [vehicle.garage, vehicle],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
