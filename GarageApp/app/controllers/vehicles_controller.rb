@@ -1,9 +1,4 @@
 class VehiclesController < ApplicationController
-  before_filter :get_garage
-
-  def get_garage
-       @garage = Garage.find(params[:garage_id])
-  end
 
   def index
     @garages= Garage.all

@@ -6,24 +6,23 @@ class ServicesController < ApplicationController
 end
 
 def show
-  @Garage = Garage.find(params[:garage_id])
+  @garage = Garage.find(params[:garage_id])
   @vehicle = Vehicle.find(params[:vehicle_id])
   @service = @vehicle.services.find(params[:id])
 end
 
-  def new
-    @garage = Garage.find(params[:garage_id])
-    @vehicle = Vehicle.find(params[:vehicle_id])
-    @service = Service.new
-  end
-
+def new
+  @garage = Garage.new
+  @vehicle = Vehicle.new
+  @service = Service.new
+end
 
 
 def create
   @garage = Garage.find(params[:garage_id])
   @vehicle = Vehicle.find(params[:vehicle_id])
   @service = @vehicle.services.create(service_params)
-  redirect_to garage_vehicle_services_path(@service)
+  redirect_to garage_vehicle_services_path
   end
 end
 

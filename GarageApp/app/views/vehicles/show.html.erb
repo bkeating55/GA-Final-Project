@@ -1,22 +1,17 @@
-<p>
-  <strong>Make:</strong>
-  <%= @vehicle.make %>
-</p>
+<h1>
+  Welcome to <%= @garage.name %>'s Garage
+</h1>
 
-<p>
-  <strong>Model:</strong>
-  <%= @vehicle.model %>
-</p>
+<h2>Vehicles</h2>
+<%= render @garage.vehicles %>
 
-<p>
-  <strong>Year:</strong>
-  <%= @vehicle.year %>
-</p>
 
 
 <h2>Maintenance Records</h2>
 
 <%= render 'services/form' %>
- 
-<%= link_to 'Edit', new_garage_vehicle_service_path(@garage, @vehicle) %>
+
+<div class="show">
+<%= link_to 'Edit', garage_vehicle_path(@garage, @vehicle) %>
 <%= link_to 'Back', garages_path %>
+</div>
