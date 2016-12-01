@@ -1,4 +1,4 @@
-<%= form_for ([ @garage, @vehicle, @vehicle.services.build]) do |f| %>
+<%= form_for [ @vehicle, @vehicle.services.build] do |f| %>
   <p>
     <%= f.label :service %><br>
     <%= f.text_field :service %>

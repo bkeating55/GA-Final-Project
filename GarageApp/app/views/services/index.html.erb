@@ -1,13 +1,28 @@
-<table>
+<h1> Service Records </h1>
 
-  <% @services.each do |service| %>
-    <tr>
+<div class ="service">
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Date</th>
+    <th>Mileage</th>
+  </tr>
+
+  <% @services.all.each do |service| %>
+
+  <tr>
+
       <td><%=service.service %></td>
+
       <td><%=service.date %></td>
+
       <td><%=service.mileage %></td>
-      <td><%= link_to 'Delete', garage_vehicle_service_path,
-             method: :delete,
-             data: { confirm: 'Are you sure?' } %></td>
+      <br>
+
+
     </tr>
-  </table>
+  </div>
+
 <% end %>
+
+  </table>

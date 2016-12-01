@@ -6,6 +6,7 @@
 <%= render @garage.vehicles %>
 
 <h2>Maintenance Records</h2>
+
 <table>
 
   <% @services.each do |service| %>
@@ -13,9 +14,9 @@
       <td><%=service.service %></td>
       <td><%=service.date %></td>
       <td><%=service.mileage %></td>
-      <td><%= link_to 'Delete', garage_vehicle_service_path,
+      <td><%= link_to 'Delete', vehicle_service_path,
              method: :delete,
              data: { confirm: 'Are you sure?' } %></td>
     </tr>
-  </table>
+</table>
 <% end %>
