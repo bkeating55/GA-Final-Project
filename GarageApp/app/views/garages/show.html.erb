@@ -1,6 +1,6 @@
-<p>
+<h1>
   Welcome to <%= @garage.name %>'s Garage
-</p>
+</h1>
 
 <h2>Vehicles</h2>
 <%= render @garage.vehicles %>
@@ -8,5 +8,9 @@
 <h2>Add a Vehicle:</h2>
 <%= render 'vehicles/form' %>
 
+
+
+<div class= "links">
 <%= link_to 'Edit', edit_garage_path(@garage) %>
 <%= link_to 'Back', garages_path %>
+</div>

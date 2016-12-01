@@ -1,0 +1,21 @@
+<p>
+  <strong>Service:</strong>
+  <%= service.service %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= service.date %>
+</p>
+
+<p>
+  <strong>Mileage:</strong>
+  <%= service.mileage %>
+</p>
+
+<p>
+  <%= link_to 'View', [service.vehicle, service] %>
+  <%= link_to 'Delete Vehicle', [service.vehicle, service],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

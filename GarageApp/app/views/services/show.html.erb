@@ -1,0 +1,21 @@
+<h1>
+  Welcome to <%= @garage.name %>'s Garage
+</h1>
+
+<h2>Vehicles</h2>
+<%= render @garage.vehicles %>
+
+<h2>Maintenance Records</h2>
+<table>
+
+  <% @services.each do |service| %>
+    <tr>
+      <td><%=service.service %></td>
+      <td><%=service.date %></td>
+      <td><%=service.mileage %></td>
+      <td><%= link_to 'Delete', garage_vehicle_service_path,
+             method: :delete,
+             data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  </table>
+<% end %>

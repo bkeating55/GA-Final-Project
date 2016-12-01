@@ -8,13 +8,14 @@
       </h2>
       <ul>
         <% @garage.errors.full_messages.each do |msg| %>
+          <ul style="list-style-type:none">
           <li><%= msg %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
-
-  <p>
+<div class= "name">
+    <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </p>
@@ -22,5 +23,6 @@
   <p>
    <%= f.submit %>
  </p>
+ </div>
 
 <% end %>

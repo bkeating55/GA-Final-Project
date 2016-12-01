@@ -1,0 +1,18 @@
+<%= form_for ([ @vehicle, @vehicle.services.build]) do |f| %>
+  <p>
+    <%= f.label :service %><br>
+    <%= f.text_field :service %>
+  </p>
+  <p>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.label :mileage %><br>
+    <%= f.text_field :mileage %>
+  </p>
+  <p>
+    <%= f.submit "Update Records"%>
+  </p>
+
+  <% end %>

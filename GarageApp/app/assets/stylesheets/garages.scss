@@ -1,3 +1,67 @@
-// Place all the styles related to the Garages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: image-url('Garage.jpg');
+  background-size: cover;
+  margin-top: 150px;
+}
+
+h1, h2, ul, label {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.create {
+  text-align: center;
+  margin-top: 150px;
+  text-color: white;
+}
+
+.name {
+  margin: auto;
+}
+
+:link{
+  text-color: white;
+}
+
+.error_explanation {
+  display: block;
+  margin: 0 auto;
+}
+
+.field_with_errors {
+  display: block;
+  margin: 0 auto;
+}
+
+.new_garage {
+  display: block;
+  margin: auto;
+}
+form {
+  text-align: center;
+}
+
+li {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.links {
+  text-align: center;
+  a:link { color: white;}
+}
+
+.new {
+  text-align: center;
+  a:link { color: white;}
+}
+
+.table {
+  text-align: center;
+}
+
+.edit {
+  text-align: center;
+  color: white;
+}
