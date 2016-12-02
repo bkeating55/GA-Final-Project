@@ -10,7 +10,7 @@
       <td><%= link_to 'Delete', garage_path(garage),
              method: :delete,
              data: { confirm: 'Are you sure?' } %></td>
-      <td><%= link_to "Home", root_path %></td>
+      
     </tr>
   <% end %>
 </table>
@@ -18,4 +18,5 @@
 <div class="new">
 
 <%= link_to 'New Garage', new_garage_path %>
+<%= link_to "Home", root_path %>
 </div>

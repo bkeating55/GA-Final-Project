@@ -12,6 +12,7 @@
 <%= render 'services/form' %>
 
 <div class="show">
+<%= link_to "View Service", garage_vehicle_services_path(@garage, @vehicle) %>
 <%= link_to 'Edit', garage_vehicle_path(@garage, @vehicle) %>
 <%= link_to 'Back', garages_path %>
 </div>
