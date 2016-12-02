@@ -31,4 +31,4 @@ services such as tire rotations, fluid changes, etc.
 
 link: https://mygarageapp.herokuapp.com/
 
-file:///Users/BillyKeating/Desktop/Screen%20Shot%202016-12-02%20at%2010.28.27%20AM.png
+https://github.com/bkeating55/GA-Final-Project/issues/1
