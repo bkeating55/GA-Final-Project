@@ -13,15 +13,16 @@ h1, h2, ul, label {
 .create {
   text-align: center;
   margin-top: 150px;
-  text-color: white;
+  text-decoration: none;
+  font-size: 50px;
 }
 
 .name {
   margin: auto;
 }
 
-a:link{
-  text-color: white;
+a {
+  color: white;
 }
 
 .error_explanation {
@@ -47,23 +48,23 @@ li {
   margin-right: 100px;
 }
 
-.links {
+.links{
   text-align: center;
-  a:link { color: white;}
+}
+.index {
+  margin-top: 100px;
+}
+
+.table{
+  margin-top: 200px;
 }
 
 .new {
+  margin-top: 50px;
   text-align: center;
   a:link { color: white;}
 }
-
-.table {
-  margin-left: 260px;
-  text-align: center;
-  color: white;
-}
-
-.edit {
-  text-align: center;
-  color: white;
+.service {
+color: white;
+text-align: center;
 }

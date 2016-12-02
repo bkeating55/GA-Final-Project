@@ -1,10 +1,5 @@
 <h1>Garages</h1>
-
-<div class="new">
-
-<%= link_to 'New Garage', new_garage_path %>
-</div>
-<div class="table">
+<div class= "index">
 <table>
 
   <% @garages.each do |garage| %>
@@ -19,4 +14,8 @@
     </tr>
   <% end %>
 </table>
+</div>
+<div class="new">
+
+<%= link_to 'New Garage', new_garage_path %>
 </div>
